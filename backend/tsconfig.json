@@ -15,7 +15,10 @@
     "outDir": "./dist",
     "rootDir": "./src",
 
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "noUnusedLocals":true,
+    "noUnusedParameters": 
+    true
   },
 
   "include": ["src/**/*"],
