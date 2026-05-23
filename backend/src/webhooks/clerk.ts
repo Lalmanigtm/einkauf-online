@@ -27,11 +27,14 @@ export async function clerkWebhookHandler(req: ExpressRequest, res: Response) {
           ? req.body
           : JSON.stringify(req.body);
 
-    const webhookRequest = new globalThis.Request("http://localhost/webhook", {
-      method: "POST",
-      headers: new Headers(req.headers as HeadersInit),
-      body: payload,
-    });
+    const webhookRequest = new globalThis.Request(
+      "http://internal/webhooks/clerk",
+      {
+        method: "POST",
+        headers: new Headers(req.headers as HeadersInit),
+        body: payload,
+      },
+    );
 
     // throws if signature is wrong or body was tampered with; only then we trust evt.
     const evt = await verifyWebhook(webhookRequest, {
