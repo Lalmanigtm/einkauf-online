@@ -42,7 +42,7 @@ export const products = pgTable("products", {
   currency: text("currency").notNull().default("USD"),
   imageUrl: text("image_url"),
   // imagekit integration fieldsfielf for deletes:
-  imagekitFileId: text("imagekit_file_id"),
+  imageKitFileId: text("imagekit_file_id"),
   active: boolean("active").notNull().default(true),
   createdAt: timestamp("created_at", { withTimezone: true })
     .defaultNow()
