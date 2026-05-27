@@ -1,4 +1,3 @@
-// 4
 import ImageKit, { NotFoundError } from "@imagekit/nodejs";
 import type { Env } from "./env.js";
 

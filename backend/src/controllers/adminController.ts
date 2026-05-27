@@ -1,4 +1,3 @@
-// 3  go to imagekit.ts in lib for   == 4
 import { getAuth } from "@clerk/express";
 import type { Request, Response, NextFunction } from "express";
 import { getLocalUser } from "../lib/users";
