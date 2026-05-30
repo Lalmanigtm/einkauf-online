@@ -8,7 +8,7 @@ interface PageErrorProps {
   };
 }
 
-export default function PageError({ message, action }: PageErrorProps) {
+export function PageError({ message, action }: PageErrorProps) {
   return (
     <div
       className="rounded-box border border-base-300 bg-base-100 p-8 text-center"
@@ -23,3 +23,5 @@ export default function PageError({ message, action }: PageErrorProps) {
     </div>
   );
 }
+
+export default PageError;
