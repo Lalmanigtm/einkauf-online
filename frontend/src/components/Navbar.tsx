@@ -98,12 +98,6 @@ const Navbar = () => {
                     {/* now setup zustand */}
                 </nav>
             </div>
-
-
-
-
-
-
         </header>
     )
 }
