@@ -111,6 +111,11 @@ export async function createCheckout(
             price_currency: "usd",
             price_amount: totalCents,
           },
+          {
+            amount_type: "fixed",
+            price_currency: "eur",
+            price_amount: totalCents,
+          },
         ],
       },
 

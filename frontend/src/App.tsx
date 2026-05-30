@@ -55,25 +55,30 @@
 
 // export default App;
 
-import { SignInButton, SignUpButton, UserButton, useUser, useAuth } from "@clerk/react";
+import {
+  SignInButton,
+  SignUpButton,
+  UserButton,
+  useUser,
+  useAuth,
+} from "@clerk/react";
 import PageLoader from "./components/PageLoader";
 import Layout from "./components/Layout";
 import { Routes, Route } from "react-router";
 import HomePage from "./pages/HomePage";
+import CartPage from "./pages/CartPage";
 
 const App = () => {
-
   const { isLoaded } = useAuth();
 
   return (
     <Layout>
-
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/cart" element={<CartPage />} />
       </Routes>
-
     </Layout>
-  )
-}
+  );
+};
 
-export default App
+export default App;
