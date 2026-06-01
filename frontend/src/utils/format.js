@@ -17,3 +17,8 @@ export function formatOrderWhen(iso, opts = {}) {
     timeStyle: "short",
   }).format(date);
 }
+
+export default {
+  formatPrice,
+  formatOrderWhen,
+};
